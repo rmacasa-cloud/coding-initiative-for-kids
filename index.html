@@ -1,0 +1,82 @@
+                <!doctype html>
+                <html lang="en">
+                <head>
+                  <meta charset="utf-8">
+                  <meta name="viewport" content="width=device-width, initial-scale=1">
+                  <title>Coding Initiative for Kids</title>
+                  <link rel="stylesheet" href="assets/css/style.css">
+                </head>
+                <body>
+                  <header class="container">
+                    <h1>Coding Initiative for Kids</h1>
+                    <p class="tag">Scratch & Python basics for first-time coders</p>
+                    <nav class="tabs">
+                      <button class="tab active" data-target="#lessons">Lessons</button>
+                      <button class="tab" data-target="#quiz">Quiz</button>
+                      <button class="tab" data-target="#resources">Resources</button>
+                    </nav>
+                  </header>
+
+                  <main class="container">
+                    <section id="lessons" class="panel active">
+                      <div class="grid">
+                        <article class="card">
+                          <h3>Scratch: Events</h3>
+                          <p>Make your sprite move when the green flag is clicked.</p>
+                          <details><summary>Try it</summary>
+                            <ol>
+                              <li>Add a sprite</li>
+                              <li>Drag <code>when green flag clicked</code></li>
+                              <li>Attach <code>move 10 steps</code></li>
+                            </ol>
+                          </details>
+                        </article>
+                        <article class="card">
+                          <h3>Python: Variables</h3>
+                          <p>Store a name and print a greeting.</p>
+                          <pre><code>name = "Kai"
+print("Hello", name)</code></pre>
+                        </article>
+                        <article class="card">
+                          <h3>Python: Loops</h3>
+                          <p>Repeat an action 5 times.</p>
+                          <pre><code>for i in range(5):
+    print("🐍", i)</code></pre>
+                        </article>
+                      </div>
+                    </section>
+
+                    <section id="quiz" class="panel">
+                      <form id="quiz-form" class="quiz">
+                        <div class="q">
+                          <p class="q-text">In Python, what does <code>range(3)</code> produce in a for-loop?</p>
+                          <label><input type="radio" name="q1" value="a"> 1, 2, 3</label>
+                          <label><input type="radio" name="q1" value="b"> 0, 1, 2</label>
+                          <label><input type="radio" name="q1" value="c"> 0, 1, 2, 3</label>
+                        </div>
+                        <div class="q">
+                          <p class="q-text">Scratch uses blocks to represent…</p>
+                          <label><input type="radio" name="q2" value="a"> Syntax trees</label>
+                          <label><input type="radio" name="q2" value="b"> Text editors</label>
+                          <label><input type="radio" name="q2" value="c"> Code statements</label>
+                        </div>
+                        <button type="submit" class="btn">Check</button>
+                        <p id="quiz-result" aria-live="polite"></p>
+                      </form>
+                    </section>
+
+                    <section id="resources" class="panel">
+                      <ul class="list">
+                        <li><a href="https://scratch.mit.edu" target="_blank" rel="noreferrer">Scratch</a></li>
+                        <li><a href="https://www.python.org" target="_blank" rel="noreferrer">Python</a></li>
+                      </ul>
+                    </section>
+                  </main>
+
+                  <footer class="container small">
+                    Built for classrooms with limited tech. © Coding Initiative for Kids
+                  </footer>
+
+                  <script src="assets/js/app.js"></script>
+                </body>
+                </html>
